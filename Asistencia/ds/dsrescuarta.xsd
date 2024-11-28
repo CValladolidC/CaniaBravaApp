@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsrescuarta" targetNamespace="http://tempuri.org/dsrescuarta.xsd" xmlns:mstns="http://tempuri.org/dsrescuarta.xsd" xmlns="http://tempuri.org/dsrescuarta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsrescuarta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsrescuarta" msprop:Generator_UserDSName="dsrescuarta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtreporte" msprop:Generator_TableClassName="dtreporteDataTable" msprop:Generator_TableVarName="tabledtreporte" msprop:Generator_TablePropName="dtreporte" msprop:Generator_RowDeletingName="dtreporteRowDeleting" msprop:Generator_UserTableName="dtreporte" msprop:Generator_RowChangingName="dtreporteRowChanging" msprop:Generator_RowEvHandlerName="dtreporteRowChangeEventHandler" msprop:Generator_RowDeletedName="dtreporteRowDeleted" msprop:Generator_RowEvArgName="dtreporteRowChangeEvent" msprop:Generator_RowChangedName="dtreporteRowChanged" msprop:Generator_RowClassName="dtreporteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="descia" msprop:Generator_ColumnVarNameInTable="columndescia" msprop:Generator_ColumnPropNameInRow="descia" msprop:Generator_ColumnPropNameInTable="desciaColumn" msprop:Generator_UserColumnName="descia" type="xs:string" minOccurs="0" />
+              <xs:element name="ruccia" msprop:Generator_ColumnVarNameInTable="columnruccia" msprop:Generator_ColumnPropNameInRow="ruccia" msprop:Generator_ColumnPropNameInTable="rucciaColumn" msprop:Generator_UserColumnName="ruccia" type="xs:string" minOccurs="0" />
+              <xs:element name="idproddes" msprop:Generator_ColumnVarNameInTable="columnidproddes" msprop:Generator_ColumnPropNameInRow="idproddes" msprop:Generator_ColumnPropNameInTable="idproddesColumn" msprop:Generator_UserColumnName="idproddes" type="xs:string" minOccurs="0" />
+              <xs:element name="desproddes" msprop:Generator_ColumnVarNameInTable="columndesproddes" msprop:Generator_ColumnPropNameInRow="desproddes" msprop:Generator_ColumnPropNameInTable="desproddesColumn" msprop:Generator_UserColumnName="desproddes" type="xs:string" minOccurs="0" />
+              <xs:element name="idzontra" msprop:Generator_ColumnVarNameInTable="columnidzontra" msprop:Generator_ColumnPropNameInRow="idzontra" msprop:Generator_ColumnPropNameInTable="idzontraColumn" msprop:Generator_UserColumnName="idzontra" type="xs:string" minOccurs="0" />
+              <xs:element name="deszontra" msprop:Generator_ColumnVarNameInTable="columndeszontra" msprop:Generator_ColumnPropNameInRow="deszontra" msprop:Generator_ColumnPropNameInTable="deszontraColumn" msprop:Generator_UserColumnName="deszontra" type="xs:string" minOccurs="0" />
+              <xs:element name="idlabret" msprop:Generator_ColumnVarNameInTable="columnidlabret" msprop:Generator_ColumnPropNameInRow="idlabret" msprop:Generator_ColumnPropNameInTable="idlabretColumn" msprop:Generator_UserColumnName="idlabret" type="xs:string" minOccurs="0" />
+              <xs:element name="deslabret" msprop:Generator_ColumnVarNameInTable="columndeslabret" msprop:Generator_ColumnPropNameInRow="deslabret" msprop:Generator_ColumnPropNameInTable="deslabretColumn" msprop:Generator_UserColumnName="deslabret" type="xs:string" minOccurs="0" />
+              <xs:element name="idcencos" msprop:Generator_ColumnVarNameInTable="columnidcencos" msprop:Generator_ColumnPropNameInRow="idcencos" msprop:Generator_ColumnPropNameInTable="idcencosColumn" msprop:Generator_UserColumnName="idcencos" type="xs:string" minOccurs="0" />
+              <xs:element name="descencos" msprop:Generator_ColumnVarNameInTable="columndescencos" msprop:Generator_ColumnPropNameInRow="descencos" msprop:Generator_ColumnPropNameInTable="descencosColumn" msprop:Generator_UserColumnName="descencos" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="fechaini" msprop:Generator_ColumnVarNameInTable="columnfechaini" msprop:Generator_ColumnPropNameInRow="fechaini" msprop:Generator_ColumnPropNameInTable="fechainiColumn" msprop:Generator_UserColumnName="fechaini" type="xs:string" minOccurs="0" />
+              <xs:element name="fechafin" msprop:Generator_ColumnVarNameInTable="columnfechafin" msprop:Generator_ColumnPropNameInRow="fechafin" msprop:Generator_ColumnPropNameInTable="fechafinColumn" msprop:Generator_UserColumnName="fechafin" type="xs:string" minOccurs="0" />
+              <xs:element name="codaux" msprop:Generator_ColumnVarNameInTable="columncodaux" msprop:Generator_ColumnPropNameInRow="codaux" msprop:Generator_ColumnPropNameInTable="codauxColumn" msprop:Generator_UserColumnName="codaux" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="subsidiados" targetNamespace="http://tempuri.org/subsidiados.xsd" xmlns:mstns="http://tempuri.org/subsidiados.xsd" xmlns="http://tempuri.org/subsidiados.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="subsidiados" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="subsidiados" msprop:Generator_UserDSName="subsidiados">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idperplan" msprop:Generator_ColumnVarNameInTable="columnidperplan" msprop:Generator_ColumnPropNameInRow="idperplan" msprop:Generator_ColumnPropNameInTable="idperplanColumn" msprop:Generator_UserColumnName="idperplan" type="xs:string" minOccurs="0" />
+              <xs:element name="anio" msprop:Generator_ColumnVarNameInTable="columnanio" msprop:Generator_ColumnPropNameInRow="anio" msprop:Generator_ColumnPropNameInTable="anioColumn" msprop:Generator_UserColumnName="anio" type="xs:string" minOccurs="0" />
+              <xs:element name="messem" msprop:Generator_ColumnVarNameInTable="columnmessem" msprop:Generator_ColumnPropNameInRow="messem" msprop:Generator_ColumnPropNameInTable="messemColumn" msprop:Generator_UserColumnName="messem" type="xs:string" minOccurs="0" />
+              <xs:element name="vnombres" msprop:Generator_ColumnVarNameInTable="columnvnombres" msprop:Generator_ColumnPropNameInRow="vnombres" msprop:Generator_ColumnPropNameInTable="vnombresColumn" msprop:Generator_UserColumnName="vnombres" type="xs:string" minOccurs="0" />
+              <xs:element name="diasum" msprop:Generator_ColumnVarNameInTable="columndiasum" msprop:Generator_ColumnPropNameInRow="diasum" msprop:Generator_ColumnPropNameInTable="diasumColumn" msprop:Generator_UserColumnName="diasum" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

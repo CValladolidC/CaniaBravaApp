@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCertificadoQuiCat" targetNamespace="http://tempuri.org/dsCertificadoQuiCat.xsd" xmlns:mstns="http://tempuri.org/dsCertificadoQuiCat.xsd" xmlns="http://tempuri.org/dsCertificadoQuiCat.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCertificadoQuiCat" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCertificadoQuiCat" msprop:Generator_UserDSName="dsCertificadoQuiCat">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="quicat" msprop:Generator_TableClassName="quicatDataTable" msprop:Generator_TableVarName="tablequicat" msprop:Generator_RowChangedName="quicatRowChanged" msprop:Generator_TablePropName="quicat" msprop:Generator_RowDeletingName="quicatRowDeleting" msprop:Generator_RowChangingName="quicatRowChanging" msprop:Generator_RowEvHandlerName="quicatRowChangeEventHandler" msprop:Generator_RowDeletedName="quicatRowDeleted" msprop:Generator_RowClassName="quicatRow" msprop:Generator_UserTableName="quicat" msprop:Generator_RowEvArgName="quicatRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cabecera1" msprop:Generator_ColumnVarNameInTable="columncabecera1" msprop:Generator_ColumnPropNameInRow="cabecera1" msprop:Generator_ColumnPropNameInTable="cabecera1Column" msprop:Generator_UserColumnName="cabecera1" type="xs:string" minOccurs="0" />
+              <xs:element name="cabecera2" msprop:Generator_ColumnVarNameInTable="columncabecera2" msprop:Generator_ColumnPropNameInRow="cabecera2" msprop:Generator_ColumnPropNameInTable="cabecera2Column" msprop:Generator_UserColumnName="cabecera2" type="xs:string" minOccurs="0" />
+              <xs:element name="renta_bruta" msprop:Generator_ColumnVarNameInTable="columnrenta_bruta" msprop:Generator_ColumnPropNameInRow="renta_bruta" msprop:Generator_ColumnPropNameInTable="renta_brutaColumn" msprop:Generator_UserColumnName="renta_bruta" type="xs:string" minOccurs="0" />
+              <xs:element name="uit" msprop:Generator_ColumnVarNameInTable="columnuit" msprop:Generator_ColumnPropNameInRow="uit" msprop:Generator_ColumnPropNameInTable="uitColumn" msprop:Generator_UserColumnName="uit" type="xs:string" minOccurs="0" />
+              <xs:element name="renta_neta" msprop:Generator_ColumnVarNameInTable="columnrenta_neta" msprop:Generator_ColumnPropNameInRow="renta_neta" msprop:Generator_ColumnPropNameInTable="renta_netaColumn" msprop:Generator_UserColumnName="renta_neta" type="xs:string" minOccurs="0" />
+              <xs:element name="impuesto_retenido" msprop:Generator_ColumnVarNameInTable="columnimpuesto_retenido" msprop:Generator_ColumnPropNameInRow="impuesto_retenido" msprop:Generator_ColumnPropNameInTable="impuesto_retenidoColumn" msprop:Generator_UserColumnName="impuesto_retenido" type="xs:string" minOccurs="0" />
+              <xs:element name="ejercicio" msprop:Generator_ColumnVarNameInTable="columnejercicio" msprop:Generator_ColumnPropNameInRow="ejercicio" msprop:Generator_ColumnPropNameInTable="ejercicioColumn" msprop:Generator_UserColumnName="ejercicio" type="xs:string" minOccurs="0" />
+              <xs:element name="representante" msprop:Generator_ColumnVarNameInTable="columnrepresentante" msprop:Generator_ColumnPropNameInRow="representante" msprop:Generator_ColumnPropNameInTable="representanteColumn" msprop:Generator_UserColumnName="representante" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

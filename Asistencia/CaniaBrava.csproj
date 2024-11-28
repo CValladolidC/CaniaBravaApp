@@ -1,0 +1,3518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E7A6557-225C-498C-93FA-1C2A29C2A248}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CaniaBrava</RootNamespace>
+    <AssemblyName>CaniaBrava</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\ocruz\Desktop\a\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>811BB2429B05F2A487EAE932AD1BEE7679EF1CF9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AppAccounting_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>cbrava.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_sistemas fuentes\SISNET\Instaladores SisNet\dll_faltan\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_sistemas fuentes\SISNET\Instaladores SisNet\dll_faltan\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_sistemas fuentes\SISNET\Instaladores SisNet\dll_faltan\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Oliver\_Asistencia\Asistencia\Asistencia\bin\Release\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.0.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Oliver\_Asistencia\Asistencia\Asistencia\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\_Oliver\_sistemas fuentes\SISNET\Instaladores SisNet\dll_faltan\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControlEX, Version=0.0.3271.41578, Culture=neutral, PublicKeyToken=1db242dc828e4b4e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Oliver\_Asistencia\Asistencia\Asistencia\bin\Debug\TabControlEX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>app.settings</DependentUpon>
+    </Compile>
+    <Compile Include="cr\crcertquicat.cs">
+      <DependentUpon>crcertquicat.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="cr\crrepsunafil.cs">
+      <DependentUpon>crrepsunafil.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="cr\crcomedorceco.cs">
+      <DependentUpon>crcomedorceco.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="cr\crcomedor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crcomedor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crcomedoracu.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crcomedoracu.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crcomedorrep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crcomedorrep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crFactura.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crGuiaRemi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crHorasExtra.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crHorasExtra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crsubsidiados.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsubsidiados.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crboleta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crboleta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crboleta_agrofrutos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crboleta_agrofrutos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crboleta_agromarin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crboleta_agromarin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crboleta_agronegocios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crboleta_agronegocios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crboleta_asepesac.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crboleta_asepesac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crboleta_citricos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crboleta_citricos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crsunafilv2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crsunafilv2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cs\Alalma.cs" />
+    <Compile Include="cs\AlArti.cs" />
+    <Compile Include="cs\AlmovC.cs" />
+    <Compile Include="cs\AlmovD.cs" />
+    <Compile Include="cs\Alstock.cs" />
+    <Compile Include="cs\Asiste.cs" />
+    <Compile Include="BackgroundWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackgroundWorker.Designer.cs">
+      <DependentUpon>BackgroundWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas.cs" />
+    <Compile Include="cr\crboletalogo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crboletalogo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crrescuarta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crrescuarta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cs\atraccion_seleccion.cs" />
+    <Compile Include="cs\Cajas.cs" />
+    <Compile Include="cs\Capacitaciones.cs" />
+    <Compile Include="cs\CenCon.cs" />
+    <Compile Include="cr\crretenpardia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crretenpardia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cs\Campo.cs" />
+    <Compile Include="cs\CalCia.cs" />
+    <Compile Include="cs\Boleta.cs" />
+    <Compile Include="cs\Clie.cs" />
+    <Compile Include="cs\Configsis.cs" />
+    <Compile Include="cs\Constante.cs" />
+    <Compile Include="cr\crComparaDesPlan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crComparaDesPlan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cs\CenPer.cs" />
+    <Compile Include="cs\ConPdt.cs" />
+    <Compile Include="cr\crplanilla_100_emp_normal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crplanilla_100_emp_normal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crplanilla_100_obr_normal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crplanilla_100_obr_normal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crplanilla_200_emp_normal.cs">
+      <DependentUpon>crplanilla_200_emp_normal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="cr\crplanilla_200_obr_normal.cs">
+      <DependentUpon>crplanilla_200_obr_normal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="cr\crplanilla_200_vac.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crplanilla_200_vac.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crresdesper.cs">
+      <DependentUpon>crresdesper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="cr\crresgendesper.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crresgendesper.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cs\BoletaHxtra.cs" />
+    <Compile Include="cs\controllingactividad.cs" />
+    <Compile Include="cs\controllingcarga.cs" />
+    <Compile Include="cs\MqtCarga.cs" />
+    <Compile Include="cs\MqtMaestrosCarga.cs" />
+    <Compile Include="cs\platos.cs" />
+    <Compile Include="cs\Ventas.cs" />
+    <Compile Include="cs\RrhhGastos.cs" />
+    <Compile Include="cs\Controlling.cs" />
+    <Compile Include="cs\Database.cs" />
+    <Compile Include="cs\DatabaseToDbf.cs" />
+    <Compile Include="cs\CuenCon.cs" />
+    <Compile Include="cs\Datasis.cs" />
+    <Compile Include="cs\Descansos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cs\EstaClie.cs" />
+    <Compile Include="cs\EstAnePro.cs" />
+    <Compile Include="cs\Factura.cs" />
+    <Compile Include="cs\GrpArti.cs" />
+    <Compile Include="cs\GuiaRemi.cs" />
+    <Compile Include="cs\HorarioBE.cs" />
+    <Compile Include="cs\HorarioPer.cs" />
+    <Compile Include="cs\Invitados.cs" />
+    <Compile Include="cs\MaesControlling.cs" />
+    <Compile Include="cs\MaestroSAP.cs" />
+    <Compile Include="cs\NumDoc.cs" />
+    <Compile Include="cs\NumLetras.cs" />
+    <Compile Include="cs\ParametrosBE.cs" />
+    <Compile Include="cs\plantiphorario.cs" />
+    <Compile Include="cs\PopupShow.cs" />
+    <Compile Include="cs\Progagridet.cs" />
+    <Compile Include="cs\programacion.cs" />
+    <Compile Include="cs\Provee.cs" />
+    <Compile Include="cs\PunClie.cs" />
+    <Compile Include="cs\SapPcp0.cs" />
+    <Compile Include="cs\SolAlma.cs" />
+    <Compile Include="cs\SolAlmaD.cs" />
+    <Compile Include="cs\TablaDetDbf.cs" />
+    <Compile Include="cs\TipCam.cs" />
+    <Compile Include="cs\Valoriza.cs" />
+    <Compile Include="ds\dsasistencia.cs">
+      <DependentUpon>dsasistencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dsasistencia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsasistencia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dsCertificadoQuiCat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCertificadoQuiCat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dscomedor.cs">
+      <DependentUpon>dscomedor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dscomedor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dscomedor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dsrescuarta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsrescuarta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dsRetenParDia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRetenParDia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dscomparadesplan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dscomparadesplan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\boleta.cs">
+      <DependentUpon>boleta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\boleta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>boleta.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cs\ConBol.cs" />
+    <Compile Include="cr\crpardiades.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpardiades.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cr\crplanret.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crplanret.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cs\CalculaFormula.cs" />
+    <Compile Include="cs\ConDataPlan.cs" />
+    <Compile Include="cs\ConFijos.cs" />
+    <Compile Include="cs\Controles.cs" />
+    <Compile Include="cs\ConPlan.cs" />
+    <Compile Include="cs\ConvertirImagen.cs" />
+    <Compile Include="cs\CalPlan.cs" />
+    <Compile Include="cs\CenCos.cs" />
+    <Compile Include="cs\CiaFile.cs" />
+    <Compile Include="cs\Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cs\FonPen.cs" />
+    <Compile Include="cs\Funciones.cs" />
+    <Compile Include="cs\GlobalVariables.cs" />
+    <Compile Include="cs\FonPenPer.cs" />
+    <Compile Include="cs\DerHab.cs" />
+    <Compile Include="cs\FiltrosMaestros.cs" />
+    <Compile Include="cs\DescJud.cs" />
+    <Compile Include="cs\EstAne.cs" />
+    <Compile Include="cs\Emplea.cs" />
+    <Compile Include="cs\DataPlan.cs" />
+    <Compile Include="cs\DiasSubsi.cs" />
+    <Compile Include="cs\Imagenes.cs" />
+    <Compile Include="cs\DetPresPer.cs" />
+    <Compile Include="cs\DetSisParm.cs" />
+    <Compile Include="cs\DetConPlan.cs" />
+    <Compile Include="cs\Destajo.cs" />
+    <Compile Include="cs\DetProdDes.cs" />
+    <Compile Include="ds\dsresdesper.cs">
+      <DependentUpon>dsresdesper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dsresdesper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsresdesper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dspardiades.cs">
+      <DependentUpon>dspardiades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dspardiades.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dspardiades.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cs\HisBak.cs" />
+    <Compile Include="cs\FormulaString.cs" />
+    <Compile Include="cs\FuncionDatos.cs" />
+    <Compile Include="cs\Gratifica.cs" />
+    <Compile Include="cs\Exporta.cs" />
+    <Compile Include="ds\dssunafil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dssunafil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dtHorasExtra.cs">
+      <DependentUpon>dtHorasExtra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\dtHorasExtra.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtHorasExtra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\subsidiados.cs">
+      <DependentUpon>subsidiados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ds\subsidiados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>subsidiados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ListBoxItem.cs" />
+    <Compile Include="Interface\ui_atraccion_seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_atraccion_seleccion.Designer.cs">
+      <DependentUpon>ui_atraccion_seleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_atrac_selecc_cargar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_atrac_selecc_cargar.Designer.cs">
+      <DependentUpon>ui_atrac_selecc_cargar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_balanza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_balanza.Designer.cs">
+      <DependentUpon>ui_balanza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_controllingactividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_controllingactividad.Designer.cs">
+      <DependentUpon>ui_controllingactividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_controllingagregaractiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_controllingagregaractiv.Designer.cs">
+      <DependentUpon>ui_controllingagregaractiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_controllingcarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_controllingcarga.Designer.cs">
+      <DependentUpon>ui_controllingcarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_controlling_ctascontables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_controlling_ctascontables.Designer.cs">
+      <DependentUpon>ui_controlling_ctascontables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_listaevaluados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_listaevaluados.Designer.cs">
+      <DependentUpon>ui_listaevaluados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_mqt_gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_mqt_gastos.Designer.cs">
+      <DependentUpon>ui_mqt_gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_mqt_gastos_maestros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_mqt_gastos_maestros.Designer.cs">
+      <DependentUpon>ui_mqt_gastos_maestros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_objproduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_objproduccion.Designer.cs">
+      <DependentUpon>ui_objproduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_platos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_platos.Designer.cs">
+      <DependentUpon>ui_platos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_platoslista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_platoslista.Designer.cs">
+      <DependentUpon>ui_platoslista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_platosupd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_platosupd.Designer.cs">
+      <DependentUpon>ui_platosupd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ventasload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ventasload.Designer.cs">
+      <DependentUpon>ui_ventasload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_PCP0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_PCP0.Designer.cs">
+      <DependentUpon>ui_PCP0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_accesogerencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_accesogerencias.designer.cs">
+      <DependentUpon>ui_accesogerencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_accesonivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_accesonivel.Designer.cs">
+      <DependentUpon>ui_accesonivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rrhhgastosload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rrhhgastosload.Designer.cs">
+      <DependentUpon>ui_rrhhgastosload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rrhhgastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rrhhgastos.Designer.cs">
+      <DependentUpon>ui_rrhhgastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_controlling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_controlling.Designer.cs">
+      <DependentUpon>ui_controlling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_controllingload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_controllingload.Designer.cs">
+      <DependentUpon>ui_controllingload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_controlling_recursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_controlling_recursos.Designer.cs">
+      <DependentUpon>ui_controlling_recursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_oeecat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_oeecat.Designer.cs">
+      <DependentUpon>ui_oeecat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_checklistneuma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_checklistneuma.designer.cs">
+      <DependentUpon>ui_checklistneuma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rep_ausentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rep_ausentes.Designer.cs">
+      <DependentUpon>ui_rep_ausentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcontrolling_recursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcontrolling_recursos.Designer.cs">
+      <DependentUpon>ui_updcontrolling_recursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updventas.Designer.cs">
+      <DependentUpon>ui_updventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rendimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rendimientos.Designer.cs">
+      <DependentUpon>ui_rendimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ventas.designer.cs">
+      <DependentUpon>ui_ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_biosalc_mao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_biosalc_mao.designer.cs">
+      <DependentUpon>ui_biosalc_mao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_buscarmedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_buscarmedicos.Designer.cs">
+      <DependentUpon>ui_buscarmedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_buscarcentsalud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_buscarcentsalud.Designer.cs">
+      <DependentUpon>ui_buscarcentsalud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_reprogramacionInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_reprogramacionInicial.Designer.cs">
+      <DependentUpon>ui_reprogramacionInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rep_sisasis_biosalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rep_sisasis_biosalc.Designer.cs">
+      <DependentUpon>ui_rep_sisasis_biosalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_reprogramacionInicialAgri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_reprogramacionInicialAgri.Designer.cs">
+      <DependentUpon>ui_reprogramacionInicialAgri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updbiosalc_mao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updbiosalc_mao.Designer.cs">
+      <DependentUpon>ui_updbiosalc_mao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewactividadesjornales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewactividades - Copia.Designer.cs">
+      <DependentUpon>ui_viewactividadesjornales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewactividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewactividades.Designer.cs">
+      <DependentUpon>ui_viewactividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewsipplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewsipplan.Designer.cs">
+      <DependentUpon>ui_viewsipplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewturnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewturnos.Designer.cs">
+      <DependentUpon>ui_viewturnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewequipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewequipos.Designer.cs">
+      <DependentUpon>ui_viewequipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewfundos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewfundos.Designer.cs">
+      <DependentUpon>ui_viewfundos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewcapataces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewcapataces.Designer.cs">
+      <DependentUpon>ui_viewcapataces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_programacionGrafAgri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_programacionGrafAgri.Designer.cs">
+      <DependentUpon>ui_programacionGrafAgri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_programacionInicialAgri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_programacionInicialAgri.Designer.cs">
+      <DependentUpon>ui_programacionInicialAgri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rep_asistencia_sunafil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rep_asistencia_sunafil.Designer.cs">
+      <DependentUpon>ui_rep_asistencia_sunafil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_solicapacitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_solicapacitaciones.Designer.cs">
+      <DependentUpon>ui_solicapacitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacionGrafAgri_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacionGrafAgri_old.Designer.cs">
+      <DependentUpon>ui_updprogramacionGrafAgri_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacionGrafAgri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacionGrafAgri.Designer.cs">
+      <DependentUpon>ui_updprogramacionGrafAgri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updsolicapacitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updsolicapacitaciones.Designer.cs">
+      <DependentUpon>ui_updsolicapacitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcensalud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcensalud.Designer.cs">
+      <DependentUpon>ui_updcensalud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updmedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updmedicos.Designer.cs">
+      <DependentUpon>ui_updmedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_capacitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_capacitaciones.Designer.cs">
+      <DependentUpon>ui_capacitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_progcapacitacionesadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_progcapacitacionesadd.Designer.cs">
+      <DependentUpon>ui_progcapacitacionesadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcapacitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcapacitaciones.Designer.cs">
+      <DependentUpon>ui_updcapacitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_accesomenuapp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_accesomenuapp.Designer.cs">
+      <DependentUpon>ui_accesomenuapp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_agrupaturnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_agrupaturnos.Designer.cs">
+      <DependentUpon>ui_agrupaturnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_alalma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_alalma.designer.cs">
+      <DependentUpon>ui_alalma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_alarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_alarti.designer.cs">
+      <DependentUpon>ui_alarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_almov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_almov.designer.cs">
+      <DependentUpon>ui_almov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_almovd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_almovd.designer.cs">
+      <DependentUpon>ui_almovd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_almovdps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_almovdps.designer.cs">
+      <DependentUpon>ui_almovdps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_almovdpscenpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_almovdpscenpro.designer.cs">
+      <DependentUpon>ui_almovdpscenpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_almovdpsmulticenpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_almovdpsmulticenpro.designer.cs">
+      <DependentUpon>ui_almovdpsmulticenpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updhorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updhorarios.Designer.cs">
+      <DependentUpon>ui_updhorarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_asismanual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_asismanual.Designer.cs">
+      <DependentUpon>ui_asismanual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_autentica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_autentica.designer.cs">
+      <DependentUpon>ui_autentica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ChangePass.Designer.cs">
+      <DependentUpon>ui_ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_clie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_clie.designer.cs">
+      <DependentUpon>ui_clie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_crystalreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_crystalreport.Designer.cs">
+      <DependentUpon>ui_crystalreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_delalarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_delalarti.designer.cs">
+      <DependentUpon>ui_delalarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_emiprov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_emiprov.designer.cs">
+      <DependentUpon>ui_emiprov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_estaclie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_estaclie.designer.cs">
+      <DependentUpon>ui_estaclie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_facguia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_facguia.designer.cs">
+      <DependentUpon>ui_facguia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_factura.designer.cs">
+      <DependentUpon>ui_factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_grupoarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_grupoarti.Designer.cs">
+      <DependentUpon>ui_grupoarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_guiaremi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_guiaremi.designer.cs">
+      <DependentUpon>ui_guiaremi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_historialdescanso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_historialdescanso.Designer.cs">
+      <DependentUpon>ui_historialdescanso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_impresora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_impresora.designer.cs">
+      <DependentUpon>ui_impresora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_kardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_kardex.designer.cs">
+      <DependentUpon>ui_kardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_lotegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_lotegen.designer.cs">
+      <DependentUpon>ui_lotegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_horarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_horarios.Designer.cs">
+      <DependentUpon>ui_horarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_mntHorarioHisto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_mntHorarioHisto.designer.cs">
+      <DependentUpon>ui_mntHorarioHisto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_accesocencos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_accesocencos.designer.cs">
+      <DependentUpon>ui_accesocencos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_asgHorPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_asgHorPer.Designer.cs">
+      <DependentUpon>ui_asgHorPer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_asgHorUpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_asgHorUpd.Designer.cs">
+      <DependentUpon>ui_asgHorUpd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorHorasExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorHorasExtras.Designer.cs">
+      <DependentUpon>ui_BoletaxEmpleadorHorasExtras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\reporte_subsidiados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\reporte_subsidiados.Designer.cs">
+      <DependentUpon>reporte_subsidiados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_maesgen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_maesgen.Designer.cs">
+      <DependentUpon>ui_maesgen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\MaesGen.cs" />
+    <Compile Include="cs\LabPer.cs" />
+    <Compile Include="cs\PerPlan.cs" />
+    <Compile Include="cs\PerLab.cs" />
+    <Compile Include="cs\OtrosFormatos.cs" />
+    <Compile Include="cs\ProdDes.cs" />
+    <Compile Include="cs\PresPer.cs" />
+    <Compile Include="cs\MathParser.cs" />
+    <Compile Include="cs\PerRet.cs" />
+    <Compile Include="cs\ProcessVariables.cs" />
+    <Compile Include="cs\MaesPdt.cs" />
+    <Compile Include="cs\Plan.cs" />
+    <Compile Include="cs\ProcPlan.cs" />
+    <Compile Include="cs\OpeIO.cs" />
+    <Compile Include="cs\Pdt.cs" />
+    <Compile Include="cs\PreDesPlan.cs" />
+    <Compile Include="cs\ProcesaPlan.cs" />
+    <Compile Include="cs\ManteTablas.cs" />
+    <Compile Include="cs\LabRet.cs" />
+    <Compile Include="cs\OptMenu.cs" />
+    <Compile Include="cs\PrintingText.cs" />
+    <Compile Include="Interface\ui_mntHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_mntHorario.Designer.cs">
+      <DependentUpon>ui_mntHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_movarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_movarti.designer.cs">
+      <DependentUpon>ui_movarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_movligados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_movligados.designer.cs">
+      <DependentUpon>ui_movligados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_movlote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_movlote.designer.cs">
+      <DependentUpon>ui_movlote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_movprovee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_movprovee.designer.cs">
+      <DependentUpon>ui_movprovee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_programacionGraf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_programacionGraf.Designer.cs">
+      <DependentUpon>ui_programacionGraf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_provee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_provee.designer.cs">
+      <DependentUpon>ui_provee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_recguia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_recguia.designer.cs">
+      <DependentUpon>ui_recguia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_regdescanso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_regdescanso.designer.cs">
+      <DependentUpon>ui_regdescanso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_repsunat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_repsunat.designer.cs">
+      <DependentUpon>ui_repsunat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rep_comedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rep_comedor.Designer.cs">
+      <DependentUpon>ui_rep_comedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rep_asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rep_asistencia.Designer.cs">
+      <DependentUpon>ui_rep_asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_programacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_programacion.Designer.cs">
+      <DependentUpon>ui_programacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_invitados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_invitados.Designer.cs">
+      <DependentUpon>ui_invitados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_salcenpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_salcenpro.designer.cs">
+      <DependentUpon>ui_salcenpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_solalmad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_solalmad.designer.cs">
+      <DependentUpon>ui_solalmad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_solialma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_solialma.designer.cs">
+      <DependentUpon>ui_solialma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_stkalma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_stkalma.Designer.cs">
+      <DependentUpon>ui_stkalma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_stkalmacenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_stkalmacenes.designer.cs">
+      <DependentUpon>ui_stkalmacenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_trabajadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_trabajadores.Designer.cs">
+      <DependentUpon>ui_trabajadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updalalma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updalalma.designer.cs">
+      <DependentUpon>ui_updalalma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updalarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updalarti.designer.cs">
+      <DependentUpon>ui_updalarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updalmov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updalmov.designer.cs">
+      <DependentUpon>ui_updalmov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcabparte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcabparte.designer.cs">
+      <DependentUpon>ui_updcabparte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updclie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updclie.designer.cs">
+      <DependentUpon>ui_updclie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updfacguia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updfacguia.designer.cs">
+      <DependentUpon>ui_updfacguia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updfactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updfactura.designer.cs">
+      <DependentUpon>ui_updfactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updgrparti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updgrparti.Designer.cs">
+      <DependentUpon>ui_updgrparti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updguiaremi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updguiaremi.designer.cs">
+      <DependentUpon>ui_updguiaremi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_programacionInd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_programacionInd.Designer.cs">
+      <DependentUpon>ui_programacionInd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcomensales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcomensales.Designer.cs">
+      <DependentUpon>ui_updcomensales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updinvitadosMasivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updinvitadosMasivo.Designer.cs">
+      <DependentUpon>ui_updinvitadosMasivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updinvitados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updinvitados.Designer.cs">
+      <DependentUpon>ui_updinvitados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_reprogramacionMasiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_reprogramacionMasiva.Designer.cs">
+      <DependentUpon>ui_reprogramacionMasiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_addcapacitados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_addcapacitados.Designer.cs">
+      <DependentUpon>ui_addcapacitados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacionGraf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacionGraf.Designer.cs">
+      <DependentUpon>ui_updprogramacionGraf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updprovee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updprovee.designer.cs">
+      <DependentUpon>ui_updprovee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updpunclie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updpunclie.designer.cs">
+      <DependentUpon>ui_updpunclie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updrecguia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updrecguia.designer.cs">
+      <DependentUpon>ui_updrecguia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updregdescanso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updregdescanso.Designer.cs">
+      <DependentUpon>ui_updregdescanso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updsalcenpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updsalcenpro.designer.cs">
+      <DependentUpon>ui_updsalcenpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updsolialma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updsolialma.designer.cs">
+      <DependentUpon>ui_updsolialma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updtrabajadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updtrabajadores.Designer.cs">
+      <DependentUpon>ui_updtrabajadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updprogramacion.Designer.cs">
+      <DependentUpon>ui_updprogramacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updtrabajadores_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updtrabajadores_old.Designer.cs">
+      <DependentUpon>ui_updtrabajadores_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_insinvitados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_insinvitados.Designer.cs">
+      <DependentUpon>ui_insinvitados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_comensales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_comensales.Designer.cs">
+      <DependentUpon>ui_comensales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_upd_asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_upd_asistencia.Designer.cs">
+      <DependentUpon>ui_upd_asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewarti.designer.cs">
+      <DependentUpon>ui_viewarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewclientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewclientes.designer.cs">
+      <DependentUpon>ui_viewclientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewlotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewlotes.designer.cs">
+      <DependentUpon>ui_viewlotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewprovee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewprovee.designer.cs">
+      <DependentUpon>ui_viewprovee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="plamereten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="plamereten.Designer.cs">
+      <DependentUpon>plamereten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interface\ui_cencosper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_cencosper.Designer.cs">
+      <DependentUpon>ui_cencosper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewasiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewasiento.Designer.cs">
+      <DependentUpon>ui_viewasiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_viewmaestros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_viewmaestros.designer.cs">
+      <DependentUpon>ui_viewmaestros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_acerca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_acerca.designer.cs">
+      <DependentUpon>ui_acerca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_rescuarta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_rescuarta.Designer.cs">
+      <DependentUpon>ui_rescuarta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorxAlfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorxAlfa.Designer.cs">
+      <DependentUpon>ui_BoletaxEmpleadorxAlfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_bonificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_bonificaciones.Designer.cs">
+      <DependentUpon>ui_bonificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updbonificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updbonificacion.Designer.cs">
+      <DependentUpon>ui_updbonificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\UtiFechas.cs" />
+    <Compile Include="cs\ZipUtil.cs" />
+    <Compile Include="Interface\ui_accesomenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_accesomenu.Designer.cs">
+      <DependentUpon>ui_accesomenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_configsis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_configsis.Designer.cs">
+      <DependentUpon>ui_configsis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_emiper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_emiper.Designer.cs">
+      <DependentUpon>ui_emiper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_form.Designer.cs">
+      <DependentUpon>ui_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_asisdia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_asisdia.Designer.cs">
+      <DependentUpon>ui_asisdia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_pack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_pack.Designer.cs">
+      <DependentUpon>ui_pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_pdtplame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_pdtplame.Designer.cs">
+      <DependentUpon>ui_pdtplame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_reportetxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_reportetxt.designer.cs">
+      <DependentUpon>ui_reportetxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_setupprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_setupprint.designer.cs">
+      <DependentUpon>ui_setupprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_recaneto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_recaneto.Designer.cs">
+      <DependentUpon>ui_recaneto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_transcontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_transcontrol.Designer.cs">
+      <DependentUpon>ui_transcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="BackgroundWorker.resx">
+      <DependentUpon>BackgroundWorker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crcertquicat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crcertquicat.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crrepsunafil.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crrepsunafil.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crcomedorceco.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crcomedorceco.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crcomedor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crcomedor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crcomedoracu.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crcomedoracu.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crcomedorrep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crcomedorrep.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crHorasExtra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crHorasExtra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crsubsidiados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsubsidiados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crboleta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crboleta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crboletalogo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crboletalogo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crboleta_agrofrutos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crboleta_agrofrutos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crboleta_agromarin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crboleta_agromarin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crboleta_agronegocios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crboleta_agronegocios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crboleta_asepesac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crboleta_asepesac.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crboleta_citricos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crboleta_citricos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crrescuarta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crrescuarta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crComparaDesPlan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crComparaDesPlan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crpardiades.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpardiades.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crplanilla_100_emp_normal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crplanilla_100_emp_normal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crplanilla_100_obr_normal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crplanilla_100_obr_normal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crplanilla_200_emp_normal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crplanilla_200_emp_normal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crplanilla_200_obr_normal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crplanilla_200_obr_normal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crplanilla_200_vac.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crplanilla_200_vac.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crplanret.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crplanret.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crresdesper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crresdesper.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crresgendesper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crresgendesper.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crretenpardia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crretenpardia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cr\crsunafilv2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crsunafilv2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_atraccion_seleccion.resx">
+      <DependentUpon>ui_atraccion_seleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_atrac_selecc_cargar.resx">
+      <DependentUpon>ui_atrac_selecc_cargar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_balanza.resx">
+      <DependentUpon>ui_balanza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_controllingactividad.resx">
+      <DependentUpon>ui_controllingactividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_controllingagregaractiv.resx">
+      <DependentUpon>ui_controllingagregaractiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_controllingcarga.resx">
+      <DependentUpon>ui_controllingcarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_controlling_ctascontables.resx">
+      <DependentUpon>ui_controlling_ctascontables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_listaevaluados.resx">
+      <DependentUpon>ui_listaevaluados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_mqt_gastos.resx">
+      <DependentUpon>ui_mqt_gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_mqt_gastos_maestros.resx">
+      <DependentUpon>ui_mqt_gastos_maestros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_objproduccion.resx">
+      <DependentUpon>ui_objproduccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_platos.resx">
+      <DependentUpon>ui_platos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_platoslista.resx">
+      <DependentUpon>ui_platoslista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_platosupd.resx">
+      <DependentUpon>ui_platosupd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ventasload.resx">
+      <DependentUpon>ui_ventasload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_PCP0.resx">
+      <DependentUpon>ui_PCP0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_accesogerencias.resx">
+      <DependentUpon>ui_accesogerencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_accesonivel.resx">
+      <DependentUpon>ui_accesonivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rrhhgastosload.resx">
+      <DependentUpon>ui_rrhhgastosload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rrhhgastos.resx">
+      <DependentUpon>ui_rrhhgastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_controlling.resx">
+      <DependentUpon>ui_controlling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_controllingload.resx">
+      <DependentUpon>ui_controllingload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_controlling_recursos.resx">
+      <DependentUpon>ui_controlling_recursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_oeecat.resx">
+      <DependentUpon>ui_oeecat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_checklistneuma.resx">
+      <DependentUpon>ui_checklistneuma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rep_ausentes.resx">
+      <DependentUpon>ui_rep_ausentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcontrolling_recursos.resx">
+      <DependentUpon>ui_updcontrolling_recursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updventas.resx">
+      <DependentUpon>ui_updventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rendimientos.resx">
+      <DependentUpon>ui_rendimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ventas.resx">
+      <DependentUpon>ui_ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_biosalc_mao.resx">
+      <DependentUpon>ui_biosalc_mao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_buscarmedicos.resx">
+      <DependentUpon>ui_buscarmedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_buscarcentsalud.resx">
+      <DependentUpon>ui_buscarcentsalud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_reprogramacionInicial.resx">
+      <DependentUpon>ui_reprogramacionInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rep_sisasis_biosalc.resx">
+      <DependentUpon>ui_rep_sisasis_biosalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_reprogramacionInicialAgri.resx">
+      <DependentUpon>ui_reprogramacionInicialAgri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updbiosalc_mao.resx">
+      <DependentUpon>ui_updbiosalc_mao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewactividades.resx">
+      <DependentUpon>ui_viewactividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewactividadesjornales.resx">
+      <DependentUpon>ui_viewactividadesjornales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewsipplan.resx">
+      <DependentUpon>ui_viewsipplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewturnos.resx">
+      <DependentUpon>ui_viewturnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewequipos.resx">
+      <DependentUpon>ui_viewequipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewfundos.resx">
+      <DependentUpon>ui_viewfundos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewcapataces.resx">
+      <DependentUpon>ui_viewcapataces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_programacionGrafAgri.resx">
+      <DependentUpon>ui_programacionGrafAgri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_programacionInicialAgri.resx">
+      <DependentUpon>ui_programacionInicialAgri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rep_asistencia_sunafil.resx">
+      <DependentUpon>ui_rep_asistencia_sunafil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_solicapacitaciones.resx">
+      <DependentUpon>ui_solicapacitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updprogramacionGrafAgri_old.resx">
+      <DependentUpon>ui_updprogramacionGrafAgri_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updprogramacionGrafAgri.resx">
+      <DependentUpon>ui_updprogramacionGrafAgri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updsolicapacitaciones.resx">
+      <DependentUpon>ui_updsolicapacitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcensalud.resx">
+      <DependentUpon>ui_updcensalud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updmedicos.resx">
+      <DependentUpon>ui_updmedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_capacitaciones.resx">
+      <DependentUpon>ui_capacitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_progcapacitacionesadd.resx">
+      <DependentUpon>ui_progcapacitacionesadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcapacitaciones.resx">
+      <DependentUpon>ui_updcapacitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_accesomenuapp.resx">
+      <DependentUpon>ui_accesomenuapp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_agrupaturnos.resx">
+      <DependentUpon>ui_agrupaturnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_alalma.resx">
+      <DependentUpon>ui_alalma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_alarti.resx">
+      <DependentUpon>ui_alarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_almov.resx">
+      <DependentUpon>ui_almov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_almovd.resx">
+      <DependentUpon>ui_almovd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_almovdps.resx">
+      <DependentUpon>ui_almovdps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_almovdpscenpro.resx">
+      <DependentUpon>ui_almovdpscenpro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_almovdpsmulticenpro.resx">
+      <DependentUpon>ui_almovdpsmulticenpro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updhorarios.resx">
+      <DependentUpon>ui_updhorarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_asismanual.resx">
+      <DependentUpon>ui_asismanual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_autentica.resx">
+      <DependentUpon>ui_autentica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ChangePass.resx">
+      <DependentUpon>ui_ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_clie.resx">
+      <DependentUpon>ui_clie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_crystalreport.resx">
+      <DependentUpon>ui_crystalreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_delalarti.resx">
+      <DependentUpon>ui_delalarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_emiprov.resx">
+      <DependentUpon>ui_emiprov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_estaclie.resx">
+      <DependentUpon>ui_estaclie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_facguia.resx">
+      <DependentUpon>ui_facguia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_factura.resx">
+      <DependentUpon>ui_factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_grupoarti.resx">
+      <DependentUpon>ui_grupoarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_guiaremi.resx">
+      <DependentUpon>ui_guiaremi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_historialdescanso.resx">
+      <DependentUpon>ui_historialdescanso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_impresora.resx">
+      <DependentUpon>ui_impresora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_kardex.resx">
+      <DependentUpon>ui_kardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_lotegen.resx">
+      <DependentUpon>ui_lotegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_horarios.resx">
+      <DependentUpon>ui_horarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_mntHorarioHisto.resx">
+      <DependentUpon>ui_mntHorarioHisto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_accesocencos.resx">
+      <DependentUpon>ui_accesocencos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_asgHorPer.resx">
+      <DependentUpon>ui_asgHorPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_asgHorUpd.resx">
+      <DependentUpon>ui_asgHorUpd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_BoletaxEmpleadorHorasExtras.resx">
+      <DependentUpon>ui_BoletaxEmpleadorHorasExtras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\reporte_subsidiados.resx">
+      <DependentUpon>reporte_subsidiados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_cencos.resx">
+      <DependentUpon>ui_cencos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_fonpen.resx">
+      <DependentUpon>ui_fonpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_mntHorario.resx">
+      <DependentUpon>ui_mntHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_movarti.resx">
+      <DependentUpon>ui_movarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_movligados.resx">
+      <DependentUpon>ui_movligados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_movlote.resx">
+      <DependentUpon>ui_movlote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_movprovee.resx">
+      <DependentUpon>ui_movprovee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_programacionGraf.resx">
+      <DependentUpon>ui_programacionGraf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_provee.resx">
+      <DependentUpon>ui_provee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_recguia.resx">
+      <DependentUpon>ui_recguia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_regdescanso.resx">
+      <DependentUpon>ui_regdescanso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_repsunat.resx">
+      <DependentUpon>ui_repsunat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rep_comedor.resx">
+      <DependentUpon>ui_rep_comedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rep_asistencia.resx">
+      <DependentUpon>ui_rep_asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_programacion.resx">
+      <DependentUpon>ui_programacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_invitados.resx">
+      <DependentUpon>ui_invitados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_salcenpro.resx">
+      <DependentUpon>ui_salcenpro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_solalmad.resx">
+      <DependentUpon>ui_solalmad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_solialma.resx">
+      <DependentUpon>ui_solialma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_stkalma.resx">
+      <DependentUpon>ui_stkalma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_stkalmacenes.resx">
+      <DependentUpon>ui_stkalmacenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_trabajadores.resx">
+      <DependentUpon>ui_trabajadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updalalma.resx">
+      <DependentUpon>ui_updalalma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updalarti.resx">
+      <DependentUpon>ui_updalarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updalmov.resx">
+      <DependentUpon>ui_updalmov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcabparte.resx">
+      <DependentUpon>ui_updcabparte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcalplan.resx">
+      <DependentUpon>ui_updcalplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updclie.resx">
+      <DependentUpon>ui_updclie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcompanias.resx">
+      <DependentUpon>ui_updcompanias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_maesgen.resx">
+      <DependentUpon>ui_maesgen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updfacguia.resx">
+      <DependentUpon>ui_updfacguia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updfactura.resx">
+      <DependentUpon>ui_updfactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updgrparti.resx">
+      <DependentUpon>ui_updgrparti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updguiaremi.resx">
+      <DependentUpon>ui_updguiaremi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_programacionInd.resx">
+      <DependentUpon>ui_programacionInd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcomensales.resx">
+      <DependentUpon>ui_updcomensales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updinvitadosMasivo.resx">
+      <DependentUpon>ui_updinvitadosMasivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updinvitados.resx">
+      <DependentUpon>ui_updinvitados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_reprogramacionMasiva.resx">
+      <DependentUpon>ui_reprogramacionMasiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_addcapacitados.resx">
+      <DependentUpon>ui_addcapacitados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updprogramacionGraf.resx">
+      <DependentUpon>ui_updprogramacionGraf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updprovee.resx">
+      <DependentUpon>ui_updprovee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updpunclie.resx">
+      <DependentUpon>ui_updpunclie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updrecguia.resx">
+      <DependentUpon>ui_updrecguia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updregdescanso.resx">
+      <DependentUpon>ui_updregdescanso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updsalcenpro.resx">
+      <DependentUpon>ui_updsalcenpro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updsolialma.resx">
+      <DependentUpon>ui_updsolialma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updtrabajadores.resx">
+      <DependentUpon>ui_updtrabajadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updprogramacion.resx">
+      <DependentUpon>ui_updprogramacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updtrabajadores_old.resx">
+      <DependentUpon>ui_updtrabajadores_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_insinvitados.resx">
+      <DependentUpon>ui_insinvitados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_comensales.resx">
+      <DependentUpon>ui_comensales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_upd_asistencia.resx">
+      <DependentUpon>ui_upd_asistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewarti.resx">
+      <DependentUpon>ui_viewarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewclientes.resx">
+      <DependentUpon>ui_viewclientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewlotes.resx">
+      <DependentUpon>ui_viewlotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewprovee.resx">
+      <DependentUpon>ui_viewprovee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="plamereten.resx">
+      <DependentUpon>plamereten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_mdiprincipal.resx">
+      <DependentUpon>ui_mdiprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updusuarios.resx">
+      <DependentUpon>ui_updusuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_usuarios.resx">
+      <DependentUpon>ui_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_companias.resx">
+      <DependentUpon>ui_companias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updfonpen.resx">
+      <DependentUpon>ui_updfonpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_detmaesgen.resx">
+      <DependentUpon>ui_detmaesgen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_upddetmaesgen.resx">
+      <DependentUpon>ui_upddetmaesgen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_accesousrcia.resx">
+      <DependentUpon>ui_accesousrcia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcencos.resx">
+      <DependentUpon>ui_updcencos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_laborper.resx">
+      <DependentUpon>ui_laborper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updlabper.resx">
+      <DependentUpon>ui_updlabper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_calplan.resx">
+      <DependentUpon>ui_calplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_sisparm.resx">
+      <DependentUpon>ui_sisparm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updpersonal.resx">
+      <DependentUpon>ui_updpersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_perplan.resx">
+      <DependentUpon>ui_perplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_buscarperplan.resx">
+      <DependentUpon>ui_buscarperplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_descjudicial.resx">
+      <DependentUpon>ui_descjudicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ubigeo.resx">
+      <DependentUpon>ui_ubigeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_DesJud.resx">
+      <DependentUpon>ui_DesJud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_buscartgrpts.resx">
+      <DependentUpon>ui_buscartgrpts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_estaneemp.resx">
+      <DependentUpon>ui_estaneemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_diassubsi.resx">
+      <DependentUpon>ui_diassubsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_diasnosubsi.resx">
+      <DependentUpon>ui_diasnosubsi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ingdatosplanilla.resx">
+      <DependentUpon>ui_ingdatosplanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_proddestajo.resx">
+      <DependentUpon>ui_proddestajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updproddes.resx">
+      <DependentUpon>ui_updproddes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_zonatrabajo.resx">
+      <DependentUpon>ui_zonatrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_tasaest.resx">
+      <DependentUpon>ui_tasaest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_upddatosplanilla.resx">
+      <DependentUpon>ui_upddatosplanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_presper.resx">
+      <DependentUpon>ui_presper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updpresper.resx">
+      <DependentUpon>ui_updpresper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_confmotivos.resx">
+      <DependentUpon>ui_confmotivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_constructor.resx">
+      <DependentUpon>ui_constructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_conceptosfijos.resx">
+      <DependentUpon>ui_conceptosfijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_buscarcalplan.resx">
+      <DependentUpon>ui_buscarcalplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_buscarperret.resx">
+      <DependentUpon>ui_buscarperret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_destajo.resx">
+      <DependentUpon>ui_destajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_Boleta.resx">
+      <DependentUpon>ui_Boleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_BoletaxEmpleador.resx">
+      <DependentUpon>ui_BoletaxEmpleador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ConceptosPlan.resx">
+      <DependentUpon>ui_ConceptosPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_DestajoToPlan.resx">
+      <DependentUpon>ui_DestajoToPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_detallePlan.resx">
+      <DependentUpon>ui_detallePlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_CambioPrecioDestajo.resx">
+      <DependentUpon>ui_CambioPrecioDestajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ConceptosCalculados.resx">
+      <DependentUpon>ui_ConceptosCalculados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ConPdt.resx">
+      <DependentUpon>ui_ConPdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_EmisionDestajoPorTrab_Periodo.resx">
+      <DependentUpon>ui_EmisionDestajoPorTrab_Periodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_Backup.resx">
+      <DependentUpon>ui_Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_AccesoSis.resx">
+      <DependentUpon>ui_AccesoSis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_AfpNet.resx">
+      <DependentUpon>ui_AfpNet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_BoletaWin.resx">
+      <DependentUpon>ui_BoletaWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_BoletaxEmpleadorWin.resx">
+      <DependentUpon>ui_BoletaxEmpleadorWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_CalculaPlanPersonal.resx">
+      <DependentUpon>ui_CalculaPlanPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_destajoPeriodo.resx">
+      <DependentUpon>ui_destajoPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_destajoplan.resx">
+      <DependentUpon>ui_destajoplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_EstadoCalPlan.resx">
+      <DependentUpon>ui_EstadoCalPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_gratifica.resx">
+      <DependentUpon>ui_gratifica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_asientos.resx">
+      <DependentUpon>ui_asientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_BoletaxEmpleadorxRango.resx">
+      <DependentUpon>ui_BoletaxEmpleadorxRango.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_buscarpresper.resx">
+      <DependentUpon>ui_buscarpresper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_cencosper.resx">
+      <DependentUpon>ui_cencosper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_cuentas.resx">
+      <DependentUpon>ui_cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_datareten.resx">
+      <DependentUpon>ui_datareten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_emireten_partediario.resx">
+      <DependentUpon>ui_emireten_partediario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_consql.resx">
+      <DependentUpon>ui_consql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_guardarimangen.resx">
+      <DependentUpon>ui_guardarimangen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updsisparm.resx">
+      <DependentUpon>ui_updsisparm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_motivos.resx">
+      <DependentUpon>ui_motivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updmotivos.resx">
+      <DependentUpon>ui_updmotivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_remuneraciones.resx">
+      <DependentUpon>ui_remuneraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updconfijos.resx">
+      <DependentUpon>ui_updconfijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updremuneracion.resx">
+      <DependentUpon>ui_updremuneracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_PerRet.resx">
+      <DependentUpon>ui_PerRet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_maespdt.resx">
+      <DependentUpon>ui_maespdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_partediariodestajo.resx">
+      <DependentUpon>ui_partediariodestajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_planillaretenciones.resx">
+      <DependentUpon>ui_planillaretenciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_procesaplan.resx">
+      <DependentUpon>ui_procesaplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_reporte.resx">
+      <DependentUpon>ui_reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_resumendestajo.resx">
+      <DependentUpon>ui_resumendestajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_upddestajo.resx">
+      <DependentUpon>ui_upddestajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updPerRet.resx">
+      <DependentUpon>ui_updPerRet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_upddetmaespdt.resx">
+      <DependentUpon>ui_upddetmaespdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updmaespdt.resx">
+      <DependentUpon>ui_updmaespdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_resumendestajoperiodo.resx">
+      <DependentUpon>ui_resumendestajoperiodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_RegistraLicencia.resx">
+      <DependentUpon>ui_RegistraLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_Plan.resx">
+      <DependentUpon>ui_Plan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_PlanElecSunat.resx">
+      <DependentUpon>ui_PlanElecSunat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_UpdCambioPrecio.resx">
+      <DependentUpon>ui_UpdCambioPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_UpdConPdt.resx">
+      <DependentUpon>ui_UpdConPdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_QuiCat.resx">
+      <DependentUpon>ui_QuiCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_UpdQuiCat.resx">
+      <DependentUpon>ui_UpdQuiCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_procesadetajoautomatico.resx">
+      <DependentUpon>ui_procesadetajoautomatico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_ResPlan.resx">
+      <DependentUpon>ui_ResPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_upddestajoplan.resx">
+      <DependentUpon>ui_upddestajoplan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updgratifica.resx">
+      <DependentUpon>ui_updgratifica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_TipoCalendario.resx">
+      <DependentUpon>ui_TipoCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_historialvaca.resx">
+      <DependentUpon>ui_historialvaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_manteTablas.resx">
+      <DependentUpon>ui_manteTablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_regvac.resx">
+      <DependentUpon>ui_regvac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_labret.resx">
+      <DependentUpon>ui_labret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_PlanElecReten.resx">
+      <DependentUpon>ui_PlanElecReten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_plantrab.resx">
+      <DependentUpon>ui_plantrab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_res5tacat.resx">
+      <DependentUpon>ui_res5tacat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updregvac.resx">
+      <DependentUpon>ui_updregvac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updcuentas.resx">
+      <DependentUpon>ui_updcuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_upddatareten.resx">
+      <DependentUpon>ui_upddatareten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updlabret.resx">
+      <DependentUpon>ui_updlabret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewasiento.resx">
+      <DependentUpon>ui_viewasiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_viewmaestros.resx">
+      <DependentUpon>ui_viewmaestros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_acerca.resx">
+      <DependentUpon>ui_acerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_rescuarta.resx">
+      <DependentUpon>ui_rescuarta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_BoletaxEmpleadorxAlfa.resx">
+      <DependentUpon>ui_BoletaxEmpleadorxAlfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_bonificaciones.resx">
+      <DependentUpon>ui_bonificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_updbonificacion.resx">
+      <DependentUpon>ui_updbonificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_accesomenu.resx">
+      <DependentUpon>ui_accesomenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_configsis.resx">
+      <DependentUpon>ui_configsis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_emiper.resx">
+      <DependentUpon>ui_emiper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_form.resx">
+      <DependentUpon>ui_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_asisdia.resx">
+      <DependentUpon>ui_asisdia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_pack.resx">
+      <DependentUpon>ui_pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_pdtplame.resx">
+      <DependentUpon>ui_pdtplame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_reportetxt.resx">
+      <DependentUpon>ui_reportetxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_setupprint.resx">
+      <DependentUpon>ui_setupprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_recaneto.resx">
+      <DependentUpon>ui_recaneto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ui_transcontrol.resx">
+      <DependentUpon>ui_transcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="cr\crFactura.rpt" />
+    <None Include="cr\crGuiaRemi.rpt" />
+    <None Include="ds\dsasistencia.xsc">
+      <DependentUpon>dsasistencia.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsasistencia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsasistencia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dsasistencia.xss">
+      <DependentUpon>dsasistencia.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsCertificadoQuiCat.xsc">
+      <DependentUpon>dsCertificadoQuiCat.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsCertificadoQuiCat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCertificadoQuiCat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dsCertificadoQuiCat.xss">
+      <DependentUpon>dsCertificadoQuiCat.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dscomedor.xsc">
+      <DependentUpon>dscomedor.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dscomedor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dscomedor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dscomedor.xss">
+      <DependentUpon>dscomedor.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsrescuarta.xsc">
+      <DependentUpon>dsrescuarta.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsrescuarta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsrescuarta.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dsrescuarta.xss">
+      <DependentUpon>dsrescuarta.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dssunafil.xsc">
+      <DependentUpon>dssunafil.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dssunafil.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dssunafil.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dssunafil.xss">
+      <DependentUpon>dssunafil.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dtHorasExtra.xsc">
+      <DependentUpon>dtHorasExtra.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dtHorasExtra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtHorasExtra.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dtHorasExtra.xss">
+      <DependentUpon>dtHorasExtra.xsd</DependentUpon>
+    </None>
+    <None Include="ds\subsidiados.xsc">
+      <DependentUpon>subsidiados.xsd</DependentUpon>
+    </None>
+    <None Include="ds\subsidiados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>subsidiados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\subsidiados.xss">
+      <DependentUpon>subsidiados.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="cs\RijndaelSimple.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cs\UsrFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_mdiprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_mdiprincipal.Designer.cs">
+      <DependentUpon>ui_mdiprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updusuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updusuarios.Designer.cs">
+      <DependentUpon>ui_updusuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_usuarios.Designer.cs">
+      <DependentUpon>ui_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_companias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_companias.designer.cs">
+      <DependentUpon>ui_companias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcompanias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcompanias.Designer.cs">
+      <DependentUpon>ui_updcompanias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_fonpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_fonpen.Designer.cs">
+      <DependentUpon>ui_fonpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updfonpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updfonpen.Designer.cs">
+      <DependentUpon>ui_updfonpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_detmaesgen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_detmaesgen.Designer.cs">
+      <DependentUpon>ui_detmaesgen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_upddetmaesgen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_upddetmaesgen.Designer.cs">
+      <DependentUpon>ui_upddetmaesgen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_accesousrcia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_accesousrcia.Designer.cs">
+      <DependentUpon>ui_accesousrcia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_cencos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_cencos.Designer.cs">
+      <DependentUpon>ui_cencos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcencos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcencos.Designer.cs">
+      <DependentUpon>ui_updcencos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_laborper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_laborper.Designer.cs">
+      <DependentUpon>ui_laborper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updlabper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updlabper.Designer.cs">
+      <DependentUpon>ui_updlabper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_calplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_calplan.Designer.cs">
+      <DependentUpon>ui_calplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcalplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcalplan.Designer.cs">
+      <DependentUpon>ui_updcalplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\SisParm.cs" />
+    <Compile Include="Interface\ui_sisparm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_sisparm.Designer.cs">
+      <DependentUpon>ui_sisparm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updpersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updpersonal.Designer.cs">
+      <DependentUpon>ui_updpersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\Ubigeo.cs" />
+    <Compile Include="Interface\ui_perplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_perplan.Designer.cs">
+      <DependentUpon>ui_perplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\UtileriasFechas.cs" />
+    <Compile Include="Interface\ui_buscarperplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_buscarperplan.Designer.cs">
+      <DependentUpon>ui_buscarperplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_descjudicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_descjudicial.Designer.cs">
+      <DependentUpon>ui_descjudicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ubigeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ubigeo.Designer.cs">
+      <DependentUpon>ui_ubigeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_DesJud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_DesJud.Designer.cs">
+      <DependentUpon>ui_DesJud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\TasaEst.cs" />
+    <Compile Include="Interface\ui_buscartgrpts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_buscartgrpts.Designer.cs">
+      <DependentUpon>ui_buscartgrpts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_estaneemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_estaneemp.Designer.cs">
+      <DependentUpon>ui_estaneemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_diassubsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_diassubsi.Designer.cs">
+      <DependentUpon>ui_diassubsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_diasnosubsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_diasnosubsi.Designer.cs">
+      <DependentUpon>ui_diasnosubsi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ingdatosplanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ingdatosplanilla.Designer.cs">
+      <DependentUpon>ui_ingdatosplanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_proddestajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_proddestajo.Designer.cs">
+      <DependentUpon>ui_proddestajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updproddes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updproddes.Designer.cs">
+      <DependentUpon>ui_updproddes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_zonatrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_zonatrabajo.Designer.cs">
+      <DependentUpon>ui_zonatrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\ZonTra.cs" />
+    <Compile Include="Interface\ui_tasaest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_tasaest.Designer.cs">
+      <DependentUpon>ui_tasaest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_upddatosplanilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_upddatosplanilla.Designer.cs">
+      <DependentUpon>ui_upddatosplanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\WebCam.cs" />
+    <Compile Include="Interface\ui_presper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_presper.Designer.cs">
+      <DependentUpon>ui_presper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updpresper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updpresper.Designer.cs">
+      <DependentUpon>ui_updpresper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\RegLabCia.cs" />
+    <Compile Include="Interface\ui_confmotivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_confmotivos.Designer.cs">
+      <DependentUpon>ui_confmotivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_constructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_constructor.Designer.cs">
+      <DependentUpon>ui_constructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\Remu.cs" />
+    <Compile Include="Interface\ui_conceptosfijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_conceptosfijos.Designer.cs">
+      <DependentUpon>ui_conceptosfijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_buscarcalplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_buscarcalplan.Designer.cs">
+      <DependentUpon>ui_buscarcalplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_buscarperret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_buscarperret.Designer.cs">
+      <DependentUpon>ui_buscarperret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_destajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_destajo.Designer.cs">
+      <DependentUpon>ui_destajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_Boleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_Boleta.designer.cs">
+      <DependentUpon>ui_Boleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleador.Designer.cs">
+      <DependentUpon>ui_BoletaxEmpleador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\SoftSecurity.cs" />
+    <Compile Include="Interface\ui_ConceptosPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ConceptosPlan.Designer.cs">
+      <DependentUpon>ui_ConceptosPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_DestajoToPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_DestajoToPlan.Designer.cs">
+      <DependentUpon>ui_DestajoToPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_detallePlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_detallePlan.Designer.cs">
+      <DependentUpon>ui_detallePlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_CambioPrecioDestajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_CambioPrecioDestajo.Designer.cs">
+      <DependentUpon>ui_CambioPrecioDestajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ConceptosCalculados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ConceptosCalculados.Designer.cs">
+      <DependentUpon>ui_ConceptosCalculados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ConPdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ConPdt.Designer.cs">
+      <DependentUpon>ui_ConPdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_EmisionDestajoPorTrab_Periodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_EmisionDestajoPorTrab_Periodo.Designer.cs">
+      <DependentUpon>ui_EmisionDestajoPorTrab_Periodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\QuiCat.cs" />
+    <Compile Include="Interface\ui_Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_Backup.Designer.cs">
+      <DependentUpon>ui_Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\RawPrinterHelper.cs" />
+    <Compile Include="cs\Tareo.cs" />
+    <Compile Include="Interface\ui_AccesoSis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_AccesoSis.Designer.cs">
+      <DependentUpon>ui_AccesoSis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_AfpNet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_AfpNet.Designer.cs">
+      <DependentUpon>ui_AfpNet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaWin.Designer.cs">
+      <DependentUpon>ui_BoletaWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorWin.Designer.cs">
+      <DependentUpon>ui_BoletaxEmpleadorWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_CalculaPlanPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_CalculaPlanPersonal.Designer.cs">
+      <DependentUpon>ui_CalculaPlanPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_destajoPeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_destajoPeriodo.Designer.cs">
+      <DependentUpon>ui_destajoPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_destajoplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_destajoplan.Designer.cs">
+      <DependentUpon>ui_destajoplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_EstadoCalPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_EstadoCalPlan.Designer.cs">
+      <DependentUpon>ui_EstadoCalPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_gratifica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_gratifica.Designer.cs">
+      <DependentUpon>ui_gratifica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\regvac.cs" />
+    <Compile Include="Interface\ui_asientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_asientos.Designer.cs">
+      <DependentUpon>ui_asientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorxRango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_BoletaxEmpleadorxRango.Designer.cs">
+      <DependentUpon>ui_BoletaxEmpleadorxRango.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_buscarpresper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_buscarpresper.Designer.cs">
+      <DependentUpon>ui_buscarpresper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_cuentas.Designer.cs">
+      <DependentUpon>ui_cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_datareten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_datareten.Designer.cs">
+      <DependentUpon>ui_datareten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_emireten_partediario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_emireten_partediario.Designer.cs">
+      <DependentUpon>ui_emireten_partediario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_consql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_consql.Designer.cs">
+      <DependentUpon>ui_consql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_guardarimangen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_guardarimangen.Designer.cs">
+      <DependentUpon>ui_guardarimangen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updsisparm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updsisparm.Designer.cs">
+      <DependentUpon>ui_updsisparm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_motivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_motivos.Designer.cs">
+      <DependentUpon>ui_motivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updmotivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updmotivos.Designer.cs">
+      <DependentUpon>ui_updmotivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_remuneraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_remuneraciones.Designer.cs">
+      <DependentUpon>ui_remuneraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updconfijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updconfijos.Designer.cs">
+      <DependentUpon>ui_updconfijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updremuneracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updremuneracion.Designer.cs">
+      <DependentUpon>ui_updremuneracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_PerRet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_PerRet.Designer.cs">
+      <DependentUpon>ui_PerRet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_maespdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_maespdt.Designer.cs">
+      <DependentUpon>ui_maespdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_partediariodestajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_partediariodestajo.Designer.cs">
+      <DependentUpon>ui_partediariodestajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_planillaretenciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_planillaretenciones.Designer.cs">
+      <DependentUpon>ui_planillaretenciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_procesaplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_procesaplan.Designer.cs">
+      <DependentUpon>ui_procesaplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_reporte.Designer.cs">
+      <DependentUpon>ui_reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_resumendestajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_resumendestajo.Designer.cs">
+      <DependentUpon>ui_resumendestajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_upddestajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_upddestajo.Designer.cs">
+      <DependentUpon>ui_upddestajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updPerRet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updPerRet.Designer.cs">
+      <DependentUpon>ui_updPerRet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_upddetmaespdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_upddetmaespdt.Designer.cs">
+      <DependentUpon>ui_upddetmaespdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updmaespdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updmaespdt.Designer.cs">
+      <DependentUpon>ui_updmaespdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_resumendestajoperiodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_resumendestajoperiodo.Designer.cs">
+      <DependentUpon>ui_resumendestajoperiodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_RegistraLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_RegistraLicencia.Designer.cs">
+      <DependentUpon>ui_RegistraLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_Plan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_Plan.Designer.cs">
+      <DependentUpon>ui_Plan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_PlanElecSunat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_PlanElecSunat.Designer.cs">
+      <DependentUpon>ui_PlanElecSunat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_UpdCambioPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_UpdCambioPrecio.Designer.cs">
+      <DependentUpon>ui_UpdCambioPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_UpdConPdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_UpdConPdt.Designer.cs">
+      <DependentUpon>ui_UpdConPdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_QuiCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_QuiCat.Designer.cs">
+      <DependentUpon>ui_QuiCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_UpdQuiCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_UpdQuiCat.Designer.cs">
+      <DependentUpon>ui_UpdQuiCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_procesadetajoautomatico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_procesadetajoautomatico.Designer.cs">
+      <DependentUpon>ui_procesadetajoautomatico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_ResPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_ResPlan.Designer.cs">
+      <DependentUpon>ui_ResPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_upddestajoplan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_upddestajoplan.Designer.cs">
+      <DependentUpon>ui_upddestajoplan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updgratifica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updgratifica.Designer.cs">
+      <DependentUpon>ui_updgratifica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_TipoCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_TipoCalendario.Designer.cs">
+      <DependentUpon>ui_TipoCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_historialvaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_historialvaca.Designer.cs">
+      <DependentUpon>ui_historialvaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_manteTablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_manteTablas.Designer.cs">
+      <DependentUpon>ui_manteTablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_regvac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_regvac.designer.cs">
+      <DependentUpon>ui_regvac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_labret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_labret.Designer.cs">
+      <DependentUpon>ui_labret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_PlanElecReten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_PlanElecReten.Designer.cs">
+      <DependentUpon>ui_PlanElecReten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_plantrab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_plantrab.Designer.cs">
+      <DependentUpon>ui_plantrab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_res5tacat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_res5tacat.Designer.cs">
+      <DependentUpon>ui_res5tacat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updregvac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updregvac.Designer.cs">
+      <DependentUpon>ui_updregvac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updcuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updcuentas.Designer.cs">
+      <DependentUpon>ui_updcuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_upddatareten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_upddatareten.Designer.cs">
+      <DependentUpon>ui_upddatareten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ui_updlabret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ui_updlabret.Designer.cs">
+      <DependentUpon>ui_updlabret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cs\Words.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXCEL.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FILE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOCATE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEW.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OPEN.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASS.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PRINT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PROCESS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPORT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAVE.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNDO.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAD.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>app.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\WORD.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDF.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BLANK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ds\boleta.xsc">
+      <DependentUpon>boleta.xsd</DependentUpon>
+    </None>
+    <None Include="ds\boleta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>boleta.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\boleta.xss">
+      <DependentUpon>boleta.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsresdesper.xsc">
+      <DependentUpon>dsresdesper.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsresdesper.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsresdesper.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dsresdesper.xss">
+      <DependentUpon>dsresdesper.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dspardiades.xsc">
+      <DependentUpon>dspardiades.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dspardiades.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dspardiades.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dspardiades.xss">
+      <DependentUpon>dspardiades.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\SETUP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favourite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunat_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ds\dscomparadesplan.xsc">
+      <DependentUpon>dscomparadesplan.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dscomparadesplan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dscomparadesplan.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ds\dscomparadesplan.xss">
+      <DependentUpon>dscomparadesplan.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAVE.BMP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SISTEMA.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AFP.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ds\dsRetenParDia.xsc">
+      <DependentUpon>dsRetenParDia.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsRetenParDia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRetenParDia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dsRetenParDia.xss">
+      <DependentUpon>dsRetenParDia.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FON_2012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INI_FON2012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualiza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoommenos.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoommas.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\synchronize.png" />
+    <None Include="Resources\cat.png" />
+    <None Include="Resources\employee.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\reporte.png" />
+    <None Include="Resources\horario.png" />
+    <None Include="Resources\calendar_clock.png" />
+    <None Include="Resources\exit_closet.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\Protect Blue.png" />
+    <None Include="Resources\FINALIZA.bmp" />
+    <None Include="Resources\GUARDAR.BMP" />
+    <None Include="Resources\master.png" />
+    <None Include="Resources\DESFIN.bmp" />
+    <None Include="Resources\DESREC.bmp" />
+    <None Include="Resources\anular.bmp" />
+    <None Include="Resources\logo_cania2.png" />
+    <None Include="Resources\doctor.jpg" />
+    <None Include="Resources\cit.png" />
+    <None Include="Resources\censalud.png" />
+    <None Include="Resources\pencil-icon.png" />
+    <Content Include="alarm-clock.ico" />
+    <Content Include="bin\Debug\directorio.txt" />
+    <Content Include="bin\Debug\license.txt" />
+    <Content Include="bin\Release\directorio.txt" />
+    <Content Include="bin\Release\EPPlus.dll" />
+    <Content Include="bin\Release\license.txt" />
+    <Content Include="cbrava.ico" />
+    <None Include="Resources\Logo - Fondo Blanco - Vertical - CMYK.JPG" />
+    <None Include="Resources\fondo horizontal.jpg" />
+    <None Include="Resources\cania.png" />
+    <Content Include="Resources\sincronizar.png" />
+    <None Include="Resources\usuario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SapMoPcp0\SapMoPcp0.vbproj">
+      <Project>{8024fb75-87db-493f-84c2-08cf5883d213}</Project>
+      <Name>SapMoPcp0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
